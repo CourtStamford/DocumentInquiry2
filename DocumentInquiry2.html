@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Document Viewer</title>
   <meta charset="UTF-8">
+  <title>Document Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Detect mobile devices
+    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      // Redirect to raw PDF file if on mobile
+      window.location.href = "Document0985394005092025.pdf";
+    }
+  </script>
   <style>
     html, body {
-      height: 100%;
       margin: 0;
       padding: 0;
+      height: 100%;
+      background-color: #f9f9f9;
     }
     iframe {
       width: 100%;
